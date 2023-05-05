@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "12842053321",
+    "project_id": "jathiratnalu-ff85b",
+    "storage_bucket": "jathiratnalu-ff85b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:12842053321:android:13c82daddf5723fe6f6718",
+        "android_client_info": {
+          "package_name": "co.sidekick.jathiratnalu"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "12842053321-q43p3ger7cgnpj5aqg2evo0jptakqufr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "co.sidekick.jathiratnalu",
+            "certificate_hash": "9bbb3186b2189ef16d8f272bdab59362c395cbb4"
+          }
+        },
+        {
+          "client_id": "12842053321-eft2ai08mr07mhd6imft8fjech7oat0q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDC7Z0EANq8sFT9DL4jQh7S1AFhFKgNfBM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "12842053321-eft2ai08mr07mhd6imft8fjech7oat0q.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "12842053321-9fid64qic06jact01jc1b0fbs6tp518l.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "co.sidekick.jathiratnalu"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
