@@ -12,3 +12,5 @@ export '/pages/hoist_flag_page/hoist_flag_page_widget.dart'
 export '/pages/hoists_page/hoists_page_widget.dart' show HoistsPageWidget;
 export '/pages/profile_page/profile_page_widget.dart' show ProfilePageWidget;
 export '/pages/create_flag/create_flag_widget.dart' show CreateFlagWidget;
+export '/details06_subscription_payment/details06_subscription_payment_widget.dart'
+    show Details06SubscriptionPaymentWidget;

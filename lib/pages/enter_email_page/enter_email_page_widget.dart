@@ -47,6 +47,7 @@ class _EnterEmailPageWidgetState extends State<EnterEmailPageWidget> {
         key: scaffoldKey,
         backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
         body: SafeArea(
+          top: true,
           child: Container(
             width: double.infinity,
             height: double.infinity,

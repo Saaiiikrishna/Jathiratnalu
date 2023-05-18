@@ -50,6 +50,7 @@ class _VerifyOTPPageWidgetState extends State<VerifyOTPPageWidget> {
         key: scaffoldKey,
         backgroundColor: Colors.transparent,
         body: SafeArea(
+          top: true,
           child: Align(
             alignment: AlignmentDirectional(0.0, 0.0),
             child: Padding(
@@ -180,7 +181,8 @@ class _VerifyOTPPageWidgetState extends State<VerifyOTPPageWidget> {
                                     return;
                                   }
 
-                                  context.goNamedAuth('flagsPage', mounted);
+                                  context.goNamedAuth(
+                                      'flagsPage', context.mounted);
                                 },
                                 autovalidateMode:
                                     AutovalidateMode.onUserInteraction,
@@ -276,7 +278,8 @@ class _VerifyOTPPageWidgetState extends State<VerifyOTPPageWidget> {
                                         return;
                                       }
 
-                                      context.goNamedAuth('flagsPage', mounted);
+                                      context.goNamedAuth(
+                                          'flagsPage', context.mounted);
                                     },
                                     text: 'Verify',
                                     options: FFButtonOptions(

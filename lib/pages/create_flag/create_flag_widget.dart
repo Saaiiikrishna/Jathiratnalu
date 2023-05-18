@@ -53,6 +53,7 @@ class _CreateFlagWidgetState extends State<CreateFlagWidget> {
         key: scaffoldKey,
         backgroundColor: FlutterFlowTheme.of(context).primaryBackground,
         body: SafeArea(
+          top: true,
           child: Container(
             width: double.infinity,
             height: double.infinity,

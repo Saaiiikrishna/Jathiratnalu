@@ -109,6 +109,7 @@ class _SignInSignUpPageWidgetState extends State<SignInSignUpPageWidget>
     _model.createEmailAddressController ??= TextEditingController();
     _model.createPasswordController ??= TextEditingController();
     _model.mobileController ??= TextEditingController();
+    authManager.handlePhoneAuthStateChanges(context);
     _model.loginEmailController ??= TextEditingController();
     _model.loginPasswordController ??= TextEditingController();
   }
@@ -129,6 +130,7 @@ class _SignInSignUpPageWidgetState extends State<SignInSignUpPageWidget>
         key: scaffoldKey,
         backgroundColor: FlutterFlowTheme.of(context).secondaryBackground,
         body: SafeArea(
+          top: true,
           child: Stack(
             children: [
               Padding(
@@ -759,7 +761,8 @@ class _SignInSignUpPageWidgetState extends State<SignInSignUpPageWidget>
 
                                                                     context.goNamedAuth(
                                                                         'flagsPage',
-                                                                        mounted);
+                                                                        context
+                                                                            .mounted);
                                                                   },
                                                                   text:
                                                                       'Create Account',
@@ -1009,10 +1012,10 @@ class _SignInSignUpPageWidgetState extends State<SignInSignUpPageWidget>
                                                                             phoneNumber:
                                                                                 phoneNumberVal,
                                                                             onCodeSent:
-                                                                                () async {
+                                                                                (context) async {
                                                                               context.goNamedAuth(
                                                                                 'verifyOTP_Page',
-                                                                                mounted,
+                                                                                context.mounted,
                                                                                 queryParams: {
                                                                                   'mobileNumber': serializeParam(
                                                                                     '+91 ${_model.mobileController.text}',
@@ -1149,7 +1152,7 @@ class _SignInSignUpPageWidgetState extends State<SignInSignUpPageWidget>
 
                                                                           context.goNamedAuth(
                                                                               'flagsPage',
-                                                                              mounted);
+                                                                              context.mounted);
                                                                         },
                                                                         text:
                                                                             'Continue with Google',
@@ -1216,7 +1219,7 @@ class _SignInSignUpPageWidgetState extends State<SignInSignUpPageWidget>
                                                                                     return;
                                                                                   }
 
-                                                                                  context.goNamedAuth('flagsPage', mounted);
+                                                                                  context.goNamedAuth('flagsPage', context.mounted);
                                                                                 },
                                                                                 text: 'Continue with Apple',
                                                                                 icon: FaIcon(
@@ -1641,7 +1644,8 @@ class _SignInSignUpPageWidgetState extends State<SignInSignUpPageWidget>
 
                                                             context.goNamedAuth(
                                                                 'flagsPage',
-                                                                mounted);
+                                                                context
+                                                                    .mounted);
                                                           },
                                                           text: 'Log In',
                                                           options:
@@ -1852,7 +1856,8 @@ class _SignInSignUpPageWidgetState extends State<SignInSignUpPageWidget>
 
                                                                 context.goNamedAuth(
                                                                     'flagsPage',
-                                                                    mounted);
+                                                                    context
+                                                                        .mounted);
                                                               },
                                                               text:
                                                                   'Continue with Google',
@@ -1941,7 +1946,7 @@ class _SignInSignUpPageWidgetState extends State<SignInSignUpPageWidget>
 
                                                                         context.goNamedAuth(
                                                                             'flagsPage',
-                                                                            mounted);
+                                                                            context.mounted);
                                                                       },
                                                                       text:
                                                                           'Continue with Apple',
