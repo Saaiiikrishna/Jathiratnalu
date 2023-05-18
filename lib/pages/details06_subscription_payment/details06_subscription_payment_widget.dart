@@ -271,6 +271,8 @@ class _Details06SubscriptionPaymentWidgetState
                                   () => _model.razorpayPaymentId = paymentId),
                             );
 
+                            context.goNamed('flagsPage');
+
                             setState(() {});
                           },
                           text: 'Change Plan',
